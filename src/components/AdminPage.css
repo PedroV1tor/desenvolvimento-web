@@ -1,0 +1,197 @@
+/* AdminPage.css */
+body {
+    margin: 0;
+    
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .admin-page {
+    width: 100vw;
+    display: flex;
+    min-height: 100vh;
+    
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #fffDE7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-right:2px solid #5D4037;
+    
+  }
+  
+  .sidebar h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+   color: black;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    padding-top: 50px;
+    
+  }
+  .sidebar nav ul li:hover{
+    color:#f44336 ;
+    border-bottom: 1px solid red ;
+  }
+
+  
+  .logout-button {
+    margin-top: auto;
+    width:124px ;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+  
+  .content {
+    background-color: white;
+    flex: 1;
+    padding: 20px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+  }
+  .filter-buttons{
+    padding-bottom: 30px;
+    
+  }
+  .filter-buttons button {
+    font-size: 18px;
+    width: 184px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+  }
+  
+  .filter-buttons button.active {
+    background-color: #f44336;
+    border: none;
+    color: white;
+  }
+
+  input[type="checkbox"] {
+    appearance: none; /* Remove o estilo padrão do checkbox head */
+    width: auto;
+    height: 20px;
+    border: 2px solid red;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white; /* Fundo padrão */
+    margin-left: 120px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  input[type="checkbox"]:checked {
+    background-color: red;
+    border-color: red;
+  }
+  
+  
+  .users-table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 18px;
+  }
+  .head th{
+    padding: 20px 0px;
+  }
+  .users-table .nometh{
+    justify-content: left;
+  }
+  
+  .users-table th {
+    border-bottom: 1px solid #000000; /* Linha horizontal no cabeçalho */
+  }
+  
+  .users-table td {
+    border-bottom: 1px solid #000000; /* Linha horizontal nas células */
+  }
+  
+  /* Remover bordas verticais */
+  .users-table td,
+  .users-table th {
+    border-left: none;
+    border-right: none;
+  }
+  
+  .users-table th input {
+    margin: 0;
+  }
+  
+  .edit-button,
+  .delete-button {
+    width: auto;
+    margin: 0 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .pagination {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  
+  .pagination button.active {
+    justify-items: right;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .link {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Mantém a cor do texto igual ao contexto */
+  }
+  
+  .link:hover {
+    color: inherit; /* Remove efeitos de hover */
+  }
+.btnProx{
+    padding-left: 200px;
+}
+  .pagination .btnp{
+    
+    border: 2px solid red;
+    border-radius: 10px;
+    justify-items: right;
+  }
+  

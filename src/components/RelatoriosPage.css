@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+  
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+  
+.sidebar {
+    width: 200px;
+    background-color: #fffDE7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-right: 2px solid #5D4037;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+  
+.sidebar h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: black;
+}
+  
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.sidebar ul li {
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    margin-bottom: 50px; /* Adiciona espaço entre os links */
+}
+  
+.sidebar ul li:hover {
+    color: #f44336;
+    border-bottom: 1px solid red;
+}
+  
+.content {
+    margin-left: 200px; /* Compensa a largura da sidebar */
+    flex: 1;
+    background-color: white;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center;
+}
+  
+.content h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+    align-self: flex-start; /* Faz o h1 alinhar à esquerda no início */
+}
+  
+.chart-container {
+    width: 100%;
+    max-width: 600px; /* Limita a largura do gráfico */
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+.logout-button {
+    margin-top: auto;
+    width: 124px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 18px;
+}
+  
+.filter-buttons {
+    padding-bottom: 30px;
+}
+  
+.filter-buttons button {
+    font-size: 18px;
+    width: 184px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+}
+  
+.filter-buttons button.active {
+    background-color: #f44336;
+    border: none;
+    color: white;
+}
